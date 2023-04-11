@@ -1,3 +1,3 @@
 ### Live page
 
-https://mpbolanos.github.io/MpBolanos-goit-markup-hw-08/
+https://mpbolanos.github.io/goit-markup-hw-08/
