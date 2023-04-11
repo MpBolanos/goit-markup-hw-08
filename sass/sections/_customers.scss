@@ -1,0 +1,34 @@
+/*SECTION-REGULAR-CUSTOMERS*/
+
+.customers {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 92px;
+    width: 170px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+
+    &:hover svg {
+      fill: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: #afb1b8;
+  }
+}

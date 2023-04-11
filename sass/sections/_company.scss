@@ -1,0 +1,41 @@
+/*SECTION-COMPANY*/
+
+.company {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 20px) / 3);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 94px;
+    position: relativo;
+  }
+
+  &__img {
+    width: 370px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    width: 353px;
+    color: $primary-background-color;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    transform: translate(0.01%, -100%);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

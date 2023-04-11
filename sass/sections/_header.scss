@@ -1,0 +1,67 @@
+/*HEADER*/
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__contacts-list {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    gap: 10px;
+    color: $secundary-text-color;
+    fill: $secundary-text-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  &__nav-item:not(:last-child),
+  &__contacts-item--email:not(:last-child) {
+    margin-right: 50px;
+  }
+}
