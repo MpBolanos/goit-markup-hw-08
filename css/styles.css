@@ -11,7 +11,6 @@ h1 {
   font-size: 18px;
   line-height: 30px;
 }
-
 span,
 a {
   font-size: 11px;
@@ -416,20 +415,19 @@ li.team__item-networks:hover svg {
 
 .customers__list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .customers__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
   height: 92px;
-  width: 170px;
 }
 
 .customers__icon {
@@ -912,10 +910,6 @@ li.team__item-networks:hover svg {
 /* Adaptive Design */
 
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -927,7 +921,8 @@ li.team__item-networks:hover svg {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(../images/header.jpg);
-    width: 1200px;
+    width: 100%;
+    position: absolute;
   }
 
   .hero__title {
@@ -958,7 +953,7 @@ li.team__item-networks:hover svg {
   /*SECTION-REGULAR-CUSTOMERS*/
 
   .customers__item {
-    width: 170px;
+    flex-basis: calc((100% - 150px) / 6);
   }
 
   /*FOOTER*/
@@ -980,7 +975,8 @@ li.team__item-networks:hover svg {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .section {
@@ -990,10 +986,16 @@ li.team__item-networks:hover svg {
 
   /*SECTION-HEADER*/
 
+  .logo-blue {
+    font-size: 24px;
+  }
   .header__contacts-list {
+    display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    flex-direction: column;
     gap: 10px;
-    margin-left: 65px;
+    margin-left: 545px;
   }
 
   /*SECTION-HERO*/
@@ -1002,7 +1004,8 @@ li.team__item-networks:hover svg {
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: url(../images/header@2x.jpg);
-    width: 768px;
+    width: 100%;
+    position: absolute;
   }
 
   .hero__title {
@@ -1011,6 +1014,13 @@ li.team__item-networks:hover svg {
 
   /*SECTION-FEACTUTES*/
 
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 410px;
+  }
   .features__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -1025,6 +1035,13 @@ li.team__item-networks:hover svg {
     width: 768px;
   }
 
+  .team__list {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
   .team__item {
     flex-basis: calc((100% - 50px) / 2);
     margin: auto;
@@ -1037,12 +1054,14 @@ li.team__item-networks:hover svg {
   /*SECTION-REGULAR-CUSTOMERS*/
 
   .customers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
     flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .customers__item {
-    width: 226px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 32px;
   }
 
   /*FOOTER*/
@@ -1073,6 +1092,7 @@ li.team__item-networks:hover svg {
     justify-content: center;
     align-items: center;
     width: 450px;
+    margin: auto;
   }
 
   /*MODAL*/
@@ -1086,7 +1106,7 @@ li.team__item-networks:hover svg {
   }
 }
 
-@media screen and (min-width: 481px), screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .menu-toggle {
     display: none;
   }
@@ -1106,7 +1126,8 @@ li.team__item-networks:hover svg {
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .section {
@@ -1127,12 +1148,11 @@ li.team__item-networks:hover svg {
   /*SECTION-HERO*/
 
   .hero {
-    display: flex;
-    justify-content: center;
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: url(../images/header@3x.jpg);
-    width: 480px;
+    width: 100%;
+    position: absolute;
   }
 
   .hero__title {
@@ -1140,6 +1160,16 @@ li.team__item-networks:hover svg {
   }
 
   /*SECTION-FEACTUTES*/
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 350px;
+  }
 
   .features__item {
     flex-basis: calc((100% - 20px) / 1);
@@ -1152,12 +1182,11 @@ li.team__item-networks:hover svg {
   /*SECTION-OUR-TEAM*/
 
   .team {
-    width: 480px;
+    width: 100%;
   }
 
   .team__item {
-    flex-basis: calc((100% - 10px) / 1);
-    margin: auto;
+    flex-basis: calc((100% - 20px) / 1);
   }
 
   /*SECTION-COMPANY*/
@@ -1169,18 +1198,20 @@ li.team__item-networks:hover svg {
   /*SECTION-REGULAR-CUSTOMERS*/
 
   .customers__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
     flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .customers__item {
-    width: 210px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 10px;
   }
 
   /*FOOTER*/
 
   .footer {
-    width: 480px;
+    width: 100%;
   }
 
   .footer__logo {
@@ -1224,6 +1255,7 @@ li.team__item-networks:hover svg {
     justify-content: center;
     align-items: center;
     width: 450px;
+    margin: auto;
   }
 
   /*MODAL*/
@@ -1248,6 +1280,7 @@ li.team__item-networks:hover svg {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
   }
 
   .menu-toggle {
@@ -1356,7 +1389,7 @@ li.team__item-networks:hover svg {
   .mobile-network {
     display: flex;
     margin-top: 64px;
-    gap: 30px;
+    gap: 15px;
   }
 
   .mobile-network__link {
