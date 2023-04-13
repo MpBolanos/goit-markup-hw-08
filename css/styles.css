@@ -1244,19 +1244,22 @@ li.team__item-networks:hover svg {
   }
 
   .footer__list-networks {
-    margin-left: 44px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 40px;
   }
 
   .footer__label-suscribe {
     justify-content: center;
-    margin-left: 103px;
+    margin-left: 28px;
   }
 
   .footer__input-mail {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 425px;
+    width: 325px;
     margin: 0;
   }
 
@@ -1336,6 +1339,7 @@ li.team__item-networks:hover svg {
     position: absolute;
     top: 16px;
     right: 16px;
+
     color: var(--primary-text-color);
   }
 
