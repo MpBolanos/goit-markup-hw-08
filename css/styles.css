@@ -1084,15 +1084,17 @@ li.team__item-networks:hover svg {
 
   .footer__label-suscribe {
     justify-content: center;
-    margin-left: 103px;
+    align-items: center;
+    align-content: center;
   }
 
   .footer__input-mail {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    margin: auto;
+    width: 430px;
+    margin: 0;
   }
 
   /*MODAL*/
@@ -1254,8 +1256,8 @@ li.team__item-networks:hover svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    margin: auto;
+    width: 425px;
+    margin: 0;
   }
 
   /*MODAL*/
