@@ -19,7 +19,8 @@
     />
     <!-- Mis Estilos -->
 
-    <link rel="stylesheet" href="./sass/main.min.css" />
+    <!--<link rel="stylesheet" href="./sass/main.min.css" />-->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
@@ -62,6 +63,60 @@
             >
           </li>
         </ul>
+        <div class="nav-mobile">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header__mobile-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="header__mobile-icon" width="40" height="35">
+            <use href="./images/icons.svg#icon-closeMobile"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-container">
+          <ul class="mobile-menu list">
+            <li>
+              <a href="./index.html" class="mobile-menu__link link">Estudio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu__link link"
+                >Portafolio</a
+              >
+            </li>
+            <li><a href="#" class="mobile-menu__link link">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="mobile-contacts-container">
+          <ul class="mobile-contacts list">
+            <li>
+              <a href="tel:+380961111111" class="mobile-tel link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-email link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-network-container">
+          <ul class="mobile-network list">
+            <li><a href="" class="mobile-network__link link">Instagram</a></li>
+            <li><a href="" class="mobile-network__link link">Twitter</a></li>
+            <li><a href="" class="mobile-network__link link">Facebook</a></li>
+            <li><a href="" class="mobile-network__link link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Aquí está el contenido principal de nuestra página -->
@@ -387,5 +442,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

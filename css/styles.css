@@ -97,6 +97,10 @@ body {
   margin-bottom: 50px;
 }
 
+.Copyright {
+  color: var(--primary-background-color);
+}
+
 :root {
   --primary-text-color: #212121;
   --secundary-text-color: #757575;
@@ -922,7 +926,6 @@ li.team__item-networks:hover svg {
     padding-bottom: 200px;
     background-image: url(../images/header.jpg);
     width: 100%;
-    position: absolute;
   }
 
   .hero__title {
@@ -960,6 +963,10 @@ li.team__item-networks:hover svg {
 
   .footer {
     width: 1200px;
+  }
+
+  .footer__container {
+    width: 95%;
   }
 
   /*MODAL*/
@@ -1073,6 +1080,16 @@ li.team__item-networks:hover svg {
   .footer__container {
     display: flex;
     justify-content: center;
+    text-align: center;
+  }
+
+  .footer__container-networks {
+    display: flex;
+    align-items: center;
+  }
+  .footer__container-form {
+    display: flex;
+    text-align: center;
   }
 
   .footer__container-send {
@@ -1080,12 +1097,6 @@ li.team__item-networks:hover svg {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-  }
-
-  .footer__label-suscribe {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .footer__input-mail {
@@ -1166,7 +1177,7 @@ li.team__item-networks:hover svg {
   .features__list {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 98%;
     gap: 30px;
     justify-content: center;
     margin: auto;
@@ -1218,7 +1229,14 @@ li.team__item-networks:hover svg {
 
   .footer__logo {
     font-size: 24px;
-    margin-left: 55px;
+  }
+
+  .footer__container-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .footer__address-link1 {
@@ -1226,7 +1244,6 @@ li.team__item-networks:hover svg {
     text-align: center;
     font-size: 14px;
     margin-top: 16px;
-    margin-left: 15px;
     width: 232px;
   }
 
@@ -1235,42 +1252,38 @@ li.team__item-networks:hover svg {
     justify-content: center;
     font-size: 14px;
     margin-top: 1px;
-    margin-left: 15px;
     width: 232px;
   }
 
-  .footer__text-networks {
-    margin-left: 58px;
-  }
-
-  .footer__list-networks {
+  .footer__container-networks {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: 40px;
   }
 
-  .footer__label-suscribe {
-    justify-content: center;
-    margin-left: 28px;
-  }
-
-  .footer__input-mail {
+  .footer__container-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 325px;
-    margin: 0;
+    align-content: center;
+    text-align: center;
+  }
+
+  .footer__input-mail {
+    width: 98%;
   }
 
   /*MODAL*/
 
   .modal {
-    width: 450px;
+    width: 95%;
   }
 
   .modal__form-text {
-    width: 370px;
+    width: 100%;
+    gap: 10px;
     margin-bottom: 30px;
   }
 
@@ -1378,9 +1391,11 @@ li.team__item-networks:hover svg {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    /* identical to box height */
-
     letter-spacing: 0.02em;
+    color: var(--secundary-text-color);
+  }
+  .mobile-tel:focus,
+  .mobile-tel:hover {
     color: var(--accent-color);
   }
 
@@ -1390,6 +1405,11 @@ li.team__item-networks:hover svg {
     line-height: 28px;
     letter-spacing: 0.02em;
     color: var(--secundary-text-color);
+  }
+
+  .mobile-email:focus,
+  .mobile-email:hover {
+    color: var(--accent-color);
   }
 
   .mobile-network {
