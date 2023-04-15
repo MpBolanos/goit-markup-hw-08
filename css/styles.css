@@ -696,7 +696,7 @@ li.team__item-networks:hover svg {
 
 .portfolio__description-text {
   position: absolute;
-  width: 370px;
+  width: auto;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
@@ -715,7 +715,7 @@ li.team__item-networks:hover svg {
 }
 
 /* VENTANA MODAL */
-
+ 
 .backdrop.is-hidden {
   visibility: hidden;
   pointer-events: none;
@@ -913,10 +913,31 @@ li.team__item-networks:hover svg {
 
 /* Adaptive Design */
 
+@media screen and (min-width: 481px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-contacts {
+    display: none;
+  }
+
+  .mobile-network-container {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .current {
+    color: var(--accent-color);
   }
 
   /*SECTION-HERO*/
@@ -990,6 +1011,10 @@ li.team__item-networks:hover svg {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .current {
+    color: var(--accent-color);
+  }
+  
 
   /*SECTION-HEADER*/
 
@@ -1004,6 +1029,7 @@ li.team__item-networks:hover svg {
     gap: 10px;
     margin-left: 545px;
   }
+
 
   /*SECTION-HERO*/
 
@@ -1108,34 +1134,51 @@ li.team__item-networks:hover svg {
     margin: 0;
   }
 
+  /*PORTFOLIO*/
+  .portfolio{
+    width: 100%;
+  
+  }
+
+  .portfolio__nav-list{
+    display: flex;
+    flex-wrap: wrap;    
+  }
+
+  .portfolio__nav-list{
+    display: flex;
+    flex-wrap: wrap;    
+  }
+
+  .portfolio__list{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.portfolio__item{
+  flex-basis: calc((100% - 30px) / 2);
+  width: auto;
+  }
+
+  .portfolio__description-text {
+    width: auto;
+  }
+  
+
   /*MODAL*/
 
-  .modal {
+ .modal {
     width: 450px;
+    height: auto;
   }
 
   .modal__form-text {
-    width: 370px;
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .menu-toggle {
-    display: none;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 30px;
   }
 
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-contacts {
-    display: none;
-  }
-
-  .mobile-network-container {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .container {
@@ -1275,10 +1318,38 @@ li.team__item-networks:hover svg {
     width: 98%;
   }
 
+    /*PORTFOLIO*/
+
+    .portfolio{
+      width: 100%;
+    
+    }
+
+    .portfolio__nav-list{
+      display: flex;
+      flex-wrap: wrap;    
+    }
+
+    .portfolio__nav-list{
+      display: flex;
+      flex-wrap: wrap;    
+    }
+    
+    .portfolio__list{
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-content: center;
+      gap: 10px;
+      margin: 0;
+    }
+ 
+   
   /*MODAL*/
 
   .modal {
     width: 95%;
+    height: auto;
   }
 
   .modal__form-text {
