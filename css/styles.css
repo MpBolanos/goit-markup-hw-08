@@ -1178,7 +1178,7 @@ li.team__item-networks:hover svg {
     gap: 10px;
     margin-bottom: 30px;
   }
-
+}
 
 @media screen and (max-width: 480px) {
   .container {
@@ -1343,6 +1343,11 @@ li.team__item-networks:hover svg {
       gap: 10px;
       margin: 0;
     }
+
+    .portfolio__item{
+      flex-basis: calc((100% - 80px) / 1);
+      width: auto;
+      }
  
    
   /*MODAL*/
