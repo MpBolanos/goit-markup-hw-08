@@ -2,21 +2,14 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  @include mobile {
-    & {
-      max-width: 480px;
-    }
-  }
-
   &__logo {
     margin-top: 24px;
     margin-bottom: 25px;
     margin-right: 93px;
-    }
+  }
 
-    &:focus {
-      color: $accent-color;
-    }
+  &:focus {
+    color: $accent-color;
   }
 
   &__container {
