@@ -67,6 +67,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include mobile {
+    & {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .section {
@@ -81,6 +88,18 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $accent-color;
+
+  @include tablet {
+    & {
+      font-size: 24px;
+    }
+  }
+
+  @include mobile {
+    & {
+      font-size: 24px;
+    }
+  }
 }
 
 .title-generic {

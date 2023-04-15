@@ -2,10 +2,17 @@
 .header {
   border-bottom: 1px solid #ececec;
 
+  @include mobile {
+    & {
+      max-width: 480px;
+    }
+  }
+
   &__logo {
     margin-top: 24px;
     margin-bottom: 25px;
     margin-right: 93px;
+    }
 
     &:focus {
       color: $accent-color;
@@ -15,6 +22,14 @@
   &__container {
     display: flex;
     align-items: center;
+  }
+
+  &__nav {
+    @include mobile {
+      & {
+        display: none;
+      }
+    }
   }
 
   &__nav-list {
@@ -41,6 +56,23 @@
   &__contacts-list {
     display: flex;
     margin-left: auto;
+
+    @include tablet {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 545px;
+      }
+    }
+
+    @include mobile {
+      & {
+        display: none;
+      }
+    }
   }
 
   &__contacts-link {

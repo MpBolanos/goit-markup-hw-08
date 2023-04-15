@@ -715,7 +715,7 @@ li.team__item-networks:hover svg {
 }
 
 /* VENTANA MODAL */
- 
+
 .backdrop.is-hidden {
   visibility: hidden;
   pointer-events: none;
@@ -1014,7 +1014,6 @@ li.team__item-networks:hover svg {
   .current {
     color: var(--accent-color);
   }
-  
 
   /*SECTION-HEADER*/
 
@@ -1029,7 +1028,6 @@ li.team__item-networks:hover svg {
     gap: 10px;
     margin-left: 545px;
   }
-
 
   /*SECTION-HERO*/
 
@@ -1058,6 +1056,7 @@ li.team__item-networks:hover svg {
     flex-basis: calc((100% - 30px) / 2);
   }
 
+  /* SECTION-COMPANY*/
   .company {
     display: none;
   }
@@ -1135,40 +1134,38 @@ li.team__item-networks:hover svg {
   }
 
   /*PORTFOLIO*/
-  .portfolio{
+  .portfolio {
     width: 100%;
-  
   }
 
-  .portfolio__nav-list{
+  .portfolio__nav-list {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
   }
 
-  .portfolio__nav-list{
+  .portfolio__nav-list {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
   }
 
-  .portfolio__list{
+  .portfolio__list {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.portfolio__item{
-  flex-basis: calc((100% - 30px) / 2);
-  width: auto;
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+    width: auto;
   }
 
   .portfolio__description-text {
     width: auto;
   }
-  
 
   /*MODAL*/
 
- .modal {
+  .modal {
     width: 450px;
     height: auto;
   }
@@ -1318,38 +1315,36 @@ li.team__item-networks:hover svg {
     width: 98%;
   }
 
-    /*PORTFOLIO*/
+  /*PORTFOLIO*/
 
-    .portfolio{
-      width: 100%;
-    
-    }
+  .portfolio {
+    width: 100%;
+  }
 
-    .portfolio__nav-list{
-      display: flex;
-      flex-wrap: wrap;    
-    }
+  .portfolio__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .portfolio__nav-list{
-      display: flex;
-      flex-wrap: wrap;    
-    }
-    
-    .portfolio__list{
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center; 
-      align-content: center;
-      gap: 10px;
-      margin: 0;
-    }
+  .portfolio__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .portfolio__item{
-      flex-basis: calc((100% - 80px) / 1);
-      width: auto;
-      }
- 
-   
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .portfolio__item {
+    flex-basis: calc((100% - 80px) / 1);
+    width: auto;
+  }
+
   /*MODAL*/
 
   .modal {

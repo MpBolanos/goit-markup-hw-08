@@ -3,6 +3,12 @@
 .footer {
   background-color: $secondary-background-color;
 
+  @include mobile {
+    & {
+      max-width: 100%;
+    }
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +19,16 @@
 
   &__container-address {
     width: 231px;
+
+    @include mobile {
+      & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+    }
   }
 
   &__logo {
@@ -25,6 +41,12 @@
     width: 145px;
     margin-top: 60px;
 
+    @include mobile {
+      & {
+        font-size: 24px;
+      }
+    }
+
     .footer__logo:focus {
       color: $accent-color;
     }
@@ -36,6 +58,16 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $primary-background-color;
+
+    @include mobile {
+      & {
+        display: flex;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 16px;
+        width: 232px;
+      }
+    }
 
     .footer__address-link1:hover,
     .footer__address-link1:focus {
@@ -50,6 +82,15 @@
     letter-spacing: 0.03em;
     color: $tertiary-tex-color;
 
+    @include mobile {
+      & {
+        justify-content: center;
+        font-size: 14px;
+        margin-top: 1px;
+        width: 232px;
+      }
+    }
+
     .footer__address-link2:hover,
     .footer__address-link2:focus {
       color: $accent-color;
@@ -61,6 +102,16 @@
     align-items: flex-start;
     align-content: center;
     flex-direction: column;
+
+    @include mobile {
+      & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+    }
   }
 
   &__list-networks {
@@ -110,6 +161,16 @@
     align-content: center;
     flex-direction: column;
     gap: 15px;
+
+    @include mobile {
+      & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+      }
+    }
   }
 
   &__label-suscribe {
@@ -144,6 +205,12 @@
     transition: border-color $transition-duration $timing-function;
     cursor: pointer;
     outline: none;
+
+    @include mobile {
+      & {
+        width: 98%;
+      }
+    }
 
     &:focus {
       border-color: $accent-color;

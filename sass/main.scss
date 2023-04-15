@@ -1,10 +1,12 @@
+@import './sections/_media-queries';
 @import './utils/variables';
 @import './components/generics';
+@import './components/hide-menu';
+@import './components/menu-mobile';
 @import './components/is-hidden';
 @import './components/modal';
-@import './sections/_media';
-@import './sections/hero';
 @import './sections/header';
+@import './sections/hero';
 @import './sections/features';
 @import './sections/company';
 @import './sections/team';

@@ -7,6 +7,29 @@
     padding: 0;
     list-style: none;
     justify-content: center;
+  
+
+    @include tablet {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 410px;
+      }
+    }
+
+    @include mobile {
+      & {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        gap: 30px;
+        justify-content: center;
+        margin: auto;
+        margin-top: 350px;
+      }
+    }
   }
 
   &__item {
@@ -14,6 +37,24 @@
     padding: 10px;
     background-color: $primary-background-color;
     border-radius: 4px;
+
+    @include desktop {
+      & {
+        flex-basis: calc((100% - 30px) / 4);
+      }
+    }
+
+    @include tablet {
+      & {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+    }
+
+    @include mobile {
+      & {
+        flex-basis: calc((100% - 30px) / 1);
+      }
+    }
   }
 
   &__container {

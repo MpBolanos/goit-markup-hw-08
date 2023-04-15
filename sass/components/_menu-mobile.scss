@@ -1,0 +1,140 @@
+@include mobile {
+  .header__container .nav-mobile {
+    justify-content: flex-end;
+  }
+
+  .nav-mobile {
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 22px;
+    right: 22px;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: $primary-background-color;
+    z-index: 1;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .header__mobile-icon:focus,
+  .header__mobile-icon:hover {
+    fill: $accent-color;
+  }
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    color: $primary-text-color;
+  }
+
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: $primary-text-color;
+    text-decoration: none;
+  }
+
+  .mobile-contacts-container {
+    margin-top: 204px;
+  }
+
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+  }
+
+  .mobile-menu__link:focus,
+  .mobile-menu__link:hover {
+    color: $accent-color;
+  }
+
+  .mobile-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $secundary-text-color;
+  }
+  .mobile-tel:focus,
+  .mobile-tel:hover {
+    color: $accent-color;
+  }
+
+  .mobile-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $secundary-text-color;
+  }
+
+  .mobile-email:focus,
+  .mobile-email:hover {
+    color: $accent-color;
+  }
+
+  .mobile-network {
+    display: flex;
+    margin-top: 64px;
+    gap: 15px;
+  }
+
+  .mobile-network__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}

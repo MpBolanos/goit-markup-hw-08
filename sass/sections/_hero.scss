@@ -1,11 +1,43 @@
 /*SECTION-HERO*/
 .hero {
+  display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(../images/header.jpg);
   background-color: $secondary-background-color;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+
+  @include desktop {
+    & {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: url(../images/header.jpg);
+      
+    }
+  }
+  @include tablet {
+    & {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-image: url(../images/header@2x.jpg);
+    
+    }
+  }
+
+  @include mobile {
+    & {
+     
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-image: url(../images/header@3x.jpg);
+    
+    }
+  }
 
   &__title {
+   
     font-weight: 900;
     font-size: 44px;
     color: #ffffff;
@@ -15,6 +47,30 @@
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @include desktop {
+      & {
+        font-size: 44px;
+        max-width: 696px;
+      }
+    }
+
+    @include tablet {
+      & {
+        font-size: 26px;
+        max-width: 360px;
+        
+      }
+    }
+
+    @include mobile {
+      & {
+        
+        font-size: 26px;
+        max-width: 360px;
+       
+      }
+    }
   }
 
   &__button {

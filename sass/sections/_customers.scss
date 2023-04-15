@@ -5,6 +5,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      & {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-right: 32px;
+      }
+    }
+
+    @include mobile {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+    }
   }
 
   &__item {
@@ -17,6 +43,12 @@
     cursor: pointer;
     height: 92px;
     width: 170px;
+
+    @include desktop {
+      & {
+        flex-basis: calc((100% - 150px) / 6);
+      }
+    }
 
     &:hover,
     &:focus {
