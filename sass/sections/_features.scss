@@ -1,5 +1,25 @@
 /*SECTION-FEATURES*/
 .features {
+
+  @include desktop {
+    & {
+      max-width: 100%;
+      margin-top: 410px;
+    }
+  }
+
+  @include tablet {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @include mobile {
+    & {
+      max-width: 100%;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +28,12 @@
     list-style: none;
     justify-content: center;
   
-
+    @include desktop {
+      & {
+        margin-top: 590px;
+        
+      }
+    }
     @include tablet {
       & {
         display: flex;
@@ -23,10 +48,12 @@
       & {
         display: flex;
         flex-direction: column;
-        width: 98%;
-        gap: 30px;
         justify-content: center;
-        margin: auto;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
         margin-top: 350px;
       }
     }
@@ -53,6 +80,7 @@
     @include mobile {
       & {
         flex-basis: calc((100% - 30px) / 1);
+       
       }
     }
   }
@@ -75,6 +103,12 @@
     color: $primary-text-color;
     margin-top: 0;
     font-size: 14px;
+
+    @include mobile {
+      & {
+        text-align: center;
+      }
+    }
   }
 
   &__text {

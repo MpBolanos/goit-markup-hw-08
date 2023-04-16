@@ -68,6 +68,22 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 
+  @include desktop {
+    & {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+    }
+  }
+
+  @include tablet {
+    & {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+
   @include mobile {
     & {
       max-width: 480px;
@@ -79,6 +95,27 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @include desktop {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+
+  @include tablet {
+    & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  @include mobile {
+    & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 .logo-blue {
@@ -88,6 +125,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $accent-color;
+
+  @include desktop {
+    & {
+      font-size: 26px;
+    }
+  }
 
   @include tablet {
     & {

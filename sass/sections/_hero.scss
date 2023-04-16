@@ -8,9 +8,10 @@
   width: 100%;
   position: absolute;
   margin: 0;
-
+  
   @include desktop {
     & {
+      max-width: 100%;
       padding-top: 200px;
       padding-bottom: 200px;
       background-image: url(../images/header.jpg);
@@ -19,6 +20,7 @@
   }
   @include tablet {
     & {
+      max-width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
       background-image: url(../images/header@2x.jpg);
@@ -28,13 +30,14 @@
 
   @include mobile {
     & {
-     
+      max-width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
       background-image: url(../images/header@3x.jpg);
     
     }
   }
+
 
   &__title {
    
@@ -70,6 +73,41 @@
         max-width: 360px;
        
       }
+    }
+  }
+
+  &__button {
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background: $accent-color;
+    color: $primary-background-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 32px;
+
+    &:hover,
+    &:focus {
+      color: $primary-background-color;
+    }
+  }
+
+  @include tablet {
+    & {
+      
+      font-size: 26px;
+    }
+  }
+
+  @include mobile {
+    & {
+      
+      font-size: 26px;
     }
   }
 

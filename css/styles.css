@@ -1143,11 +1143,6 @@ li.team__item-networks:hover svg {
     flex-wrap: wrap;
   }
 
-  .portfolio__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
@@ -1319,11 +1314,6 @@ li.team__item-networks:hover svg {
 
   .portfolio {
     width: 100%;
-  }
-
-  .portfolio__nav-list {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .portfolio__nav-list {

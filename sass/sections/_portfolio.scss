@@ -1,8 +1,48 @@
 /*SECTION-PORTFOLIO*/
 .portfolio {
+
+  display: flex;
+  
+
+  @include desktop {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @include tablet {
+    & {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  @include mobile {
+    & {
+      max-width: 100%;
+    }
+  }
+
   &__nav-list {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+
+    @include mobile {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+    }
+  
   }
 
   &__nav-btn {
@@ -36,6 +76,26 @@
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
+
+    @include tablet {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+      }
+    }
+
+    @include mobile {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        margin: 0;
+      }
+    }
   }
 
   &__text-container {
@@ -66,6 +126,21 @@
     width: 370px;
     margin-bottom: 30px;
 
+    @include tablet {
+      & {
+        flex-basis: calc((100% - 30px) / 2);
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+
+    @include mobile {
+      & {
+        flex-basis: calc((100% - 80px) / 1);
+        max-width: 450px;
+      }
+    }
+
     &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -91,6 +166,12 @@
     text-align: justify;
     padding: 63px 24px;
     transition: transform 1s ease;
+
+    @include tablet {
+      & {
+        width: auto;
+      }
+    }
 
     .portfolio__item:hover & {
       transform: translateY(-294px);

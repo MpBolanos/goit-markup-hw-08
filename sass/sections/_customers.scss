@@ -1,21 +1,49 @@
 /*SECTION-REGULAR-CUSTOMERS*/
 
 .customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+margin: 0;
+
+  @include desktop {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @include tablet {
+    & {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  @include mobile {
+    & {
+      max-width: 100%;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+gap: 20px;
+    
     @include tablet {
       & {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-right: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+        
       }
     }
 
@@ -23,12 +51,12 @@
       & {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        width: auto;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
-        margin-right: 10px;
+        gap: 20px;
       }
     }
   }
@@ -44,11 +72,14 @@
     height: 92px;
     width: 170px;
 
-    @include desktop {
+    @include tablet {
       & {
-        flex-basis: calc((100% - 150px) / 6);
+
+        max-width: 226px;
+    
       }
     }
+
 
     &:hover,
     &:focus {
