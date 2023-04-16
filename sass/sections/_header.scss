@@ -23,9 +23,23 @@
   }
 
   &__logo {
+    display: block;
     margin-top: 24px;
     margin-bottom: 25px;
-    margin-right: 93px;
+
+    @include desktop {
+      & {
+        
+        margin-right: 93px;
+      }
+    }
+
+    @include mobile {
+      & {
+        
+        margin-right: 93px;
+      }
+    }
   }
 
   &:focus {
@@ -35,6 +49,13 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      & {
+        
+        display: block;
+      }
+    }
   }
 
   &__nav {

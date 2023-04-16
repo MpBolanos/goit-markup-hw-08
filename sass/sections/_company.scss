@@ -1,6 +1,11 @@
 .company {
- 
 
+
+@include desktop {
+  & {
+    margin-top: 0;
+  }
+}
 
   @include tablet {
     & {

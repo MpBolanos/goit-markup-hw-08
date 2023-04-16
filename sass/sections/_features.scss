@@ -1,6 +1,8 @@
 /*SECTION-FEATURES*/
 .features {
 
+  margin-top: 610px;
+
   @include desktop {
     & {
       max-width: 100%;
@@ -11,12 +13,14 @@
   @include tablet {
     & {
       max-width: 100%;
+      margin-top: 0;
     }
   }
 
   @include mobile {
     & {
       max-width: 100%;
+      margin-top: 0;
     }
   }
 
