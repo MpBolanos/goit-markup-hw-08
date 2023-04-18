@@ -1,6 +1,7 @@
 /*HEADER*/
 .header {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
   margin: 0;
 
@@ -25,19 +26,18 @@
   &__logo {
     display: block;
     margin-top: 24px;
+    margin-right: 93px;
     margin-bottom: 25px;
 
     @include desktop {
       & {
-        
         margin-right: 93px;
       }
     }
 
-    @include mobile {
+    @include tablet {
       & {
-        
-        margin-right: 93px;
+        margin-right: auto;
       }
     }
   }
@@ -52,7 +52,6 @@
 
     @include mobile {
       & {
-        
         display: block;
       }
     }
@@ -95,10 +94,9 @@
       & {
         display: flex;
         flex-wrap: wrap;
-        position: absolute;
+
         flex-direction: column;
         gap: 10px;
-        margin-left: 545px;
       }
     }
 

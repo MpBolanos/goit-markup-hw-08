@@ -79,14 +79,14 @@ body {
 
   @include tablet {
     & {
-      max-width: 768px;
+      max-width: 1199.98px;
       margin: 0 auto;
     }
   }
 
   @include mobile {
     & {
-      max-width: 480px;
+      max-width: 767px;
       margin: 0 auto;
     }
   }

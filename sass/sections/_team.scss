@@ -1,7 +1,7 @@
 /*SECTION-OUR-TEAM*/
 
 .team {
-  display:flex;
+  display: flex;
   background-color: $tertiary-background-color;
 
   @include desktop {
@@ -14,7 +14,7 @@
 
   @include tablet {
     & {
-      max-width: 768px;
+      max-width: auto;
       padding-left: 0;
       padding-right: 0;
     }
@@ -22,7 +22,7 @@
 
   @include mobile {
     & {
-      max-width: 480px;
+      max-width: auto;
     }
   }
 

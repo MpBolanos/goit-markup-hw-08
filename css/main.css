@@ -78,15 +78,15 @@ body {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .container {
-    max-width: 768px;
+    max-width: 1199.98px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 767px;
     margin: 0 auto;
   }
 }
@@ -101,7 +101,7 @@ body {
     padding-bottom: 94px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -127,7 +127,7 @@ body {
     font-size: 26px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .logo-blue {
     font-size: 24px;
   }
@@ -316,7 +316,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .modal {
     width: 450px;
     height: auto;
@@ -361,7 +361,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .modal__form-text {
     width: 100%;
     gap: 10px;
@@ -487,6 +487,7 @@ body {
 /*HEADER*/
 .header {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
   margin: 0;
 }
@@ -495,7 +496,7 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .header {
     max-width: 100%;
   }
@@ -508,6 +509,7 @@ body {
 .header__logo {
   display: block;
   margin-top: 24px;
+  margin-right: 93px;
   margin-bottom: 25px;
 }
 @media screen and (max-width: 1200px) {
@@ -515,9 +517,9 @@ body {
     margin-right: 93px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .header__logo {
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 .header:focus {
@@ -558,14 +560,12 @@ body {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .header__contacts-list {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
     flex-direction: column;
     gap: 10px;
-    margin-left: 545px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -610,7 +610,7 @@ body {
     background-image: url(../images/header.jpg);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .hero {
     max-width: 100%;
     padding-top: 118px;
@@ -643,7 +643,7 @@ body {
     max-width: 696px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .hero__title {
     font-size: 26px;
     max-width: 360px;
@@ -673,7 +673,7 @@ body {
 .hero__button:hover, .hero__button:focus {
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .hero {
     font-size: 26px;
   }
@@ -712,7 +712,7 @@ body {
     margin-top: 410px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .features {
     max-width: 100%;
     margin-top: 0;
@@ -737,7 +737,7 @@ body {
     margin-top: 590px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -770,7 +770,7 @@ body {
     flex-basis: calc((100% - 30px) / 4);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .features__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -820,7 +820,7 @@ body {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .company {
     display: none;
   }
@@ -879,16 +879,16 @@ body {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .team {
-    max-width: 768px;
+    max-width: auto;
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .team {
-    max-width: 480px;
+    max-width: auto;
   }
 }
 .team__list {
@@ -898,7 +898,7 @@ body {
   padding: 0;
   list-style: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .team__list {
     display: flex;
     margin: 0;
@@ -918,7 +918,7 @@ body {
     flex-basis: calc((100% - 100px) / 4);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .team__item {
     flex-basis: calc((100% - 50px) / 2);
     margin: auto;
@@ -963,7 +963,7 @@ body {
   margin-bottom: 30px;
   margin-left: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .team__list-networks {
     justify-content: center;
   }
@@ -1006,7 +1006,7 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .customers {
     max-width: 100%;
     margin: 0;
@@ -1023,7 +1023,7 @@ body {
   justify-content: space-between;
   gap: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .customers__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1058,7 +1058,7 @@ body {
   height: 92px;
   width: 170px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .customers__item {
     max-width: 226px;
   }
@@ -1085,7 +1085,7 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .footer {
     max-width: 100%;
   }
@@ -1102,7 +1102,7 @@ body {
   padding-bottom: 60px;
   gap: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .footer__container {
     display: flex;
     justify-content: center;
@@ -1117,7 +1117,7 @@ body {
     margin-left: 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .footer__container-address {
     margin-left: 0;
   }
@@ -1196,7 +1196,7 @@ body {
   align-content: center;
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .footer__container-networks {
     align-items: center;
   }
@@ -1266,7 +1266,7 @@ body {
   align-content: center;
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .footer__container-send {
     display: flex;
     flex-direction: column;
@@ -1339,7 +1339,7 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio {
     max-width: 100%;
     margin: 0;
@@ -1354,7 +1354,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio__nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -1394,7 +1394,7 @@ body {
   gap: 30px;
   list-style: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
@@ -1438,7 +1438,7 @@ body {
   width: 370px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio__item {
     flex-basis: calc((100% - 30px) / 2);
     width: auto;
@@ -1473,7 +1473,7 @@ body {
   padding: 63px 24px;
   transition: transform 1s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio__description-text {
     width: auto;
   }
