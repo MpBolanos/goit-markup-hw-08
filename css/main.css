@@ -1009,6 +1009,11 @@ body {
 @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .customers {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 0;
   }
 }
@@ -1106,6 +1111,15 @@ body {
   .footer__container {
     display: flex;
     justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
   }
 }

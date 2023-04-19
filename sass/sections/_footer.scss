@@ -40,6 +40,16 @@
         text-align: center;
       }
     }
+
+    @include mobile {
+      & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+      }
+    }
   
   }
 
