@@ -67,13 +67,8 @@
 
   &__nav-list {
     display: flex;
-
-    @include tablet {
-      & {
-        margin-right: 15px;
-        margin-left: 15px;
-      }
-    }
+    justify-content: space-between;
+    width: auto;
   }
 
   &__nav-link {
@@ -137,7 +132,7 @@
 
     @include tablet {
       & {
-        margin-right: 15px;
+        margin-right: 25px;
       }
     }
   }
