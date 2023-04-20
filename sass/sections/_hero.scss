@@ -3,8 +3,8 @@
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/header.jpg);
   background-color: $secondary-background-color;
+  background-image: url(../images/header.jpg);
   width: 100%;
   position: absolute;
   margin: 0;
@@ -14,6 +14,7 @@
       max-width: 100%;
       padding-top: 200px;
       padding-bottom: 200px;
+      background-color: $secondary-background-color;
       background-image: url(../images/header.jpg);
     }
   }
@@ -22,6 +23,7 @@
       max-width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
+      background-color: $hero-backgroud-color;
       background-image: url(../images/header@2x.jpg);
     }
   }
@@ -31,6 +33,7 @@
       max-width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
+      background-color: $hero-backgroud-color;
       background-image: url(../images/header@3x.jpg);
     }
   }

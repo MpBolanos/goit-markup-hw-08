@@ -1,11 +1,9 @@
 .company {
-
-
-@include desktop {
-  & {
-    margin-top: 0;
+  @include desktop {
+    & {
+      margin-top: 0;
+    }
   }
-}
 
   @include tablet {
     & {
@@ -27,7 +25,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-right: 30px;
   }
 
   &__item {
@@ -51,7 +48,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     position: absolute;
-    width: 353px;
+    width: 362px;
     color: $primary-background-color;
     padding-top: 27px;
     padding-bottom: 27px;

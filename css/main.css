@@ -603,8 +603,8 @@ body {
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/header.jpg);
   background-color: #2f303a;
+  background-image: url(../images/header.jpg);
   width: 100%;
   position: absolute;
   margin: 0;
@@ -614,6 +614,7 @@ body {
     max-width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #2f303a;
     background-image: url(../images/header.jpg);
   }
 }
@@ -622,6 +623,7 @@ body {
     max-width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-color: rgba(47, 48, 58, 0.4);
     background-image: url(../images/header@2x.jpg);
   }
 }
@@ -630,6 +632,7 @@ body {
     max-width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-color: rgba(47, 48, 58, 0.4);
     background-image: url(../images/header@3x.jpg);
   }
 }
@@ -845,7 +848,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-right: 30px;
 }
 .company__item {
   flex-basis: calc((100% - 20px) / 3);
@@ -866,7 +868,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   position: absolute;
-  width: 353px;
+  width: 362px;
   color: #ffffff;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -1016,7 +1018,6 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 0;
 }
 @media screen and (max-width: 1200px) {
   .customers {
@@ -1042,7 +1043,9 @@ body {
 .customers__list {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
+  margin: 0;
   gap: 20px;
 }
 @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {

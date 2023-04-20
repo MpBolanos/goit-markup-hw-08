@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 0;
+
 
   @include desktop {
     & {
@@ -35,7 +35,9 @@
   &__list {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
+    margin: 0;
     gap: 20px;
 
     @include tablet {
