@@ -86,7 +86,7 @@ body {
 
   @include mobile {
     & {
-      max-width: 767px;
+      max-width: 575px;
       margin: 0 auto;
     }
   }

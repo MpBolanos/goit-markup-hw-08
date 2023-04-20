@@ -67,6 +67,13 @@
 
   &__nav-list {
     display: flex;
+
+    @include tablet {
+      & {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
   }
 
   &__nav-link {
@@ -127,5 +134,11 @@
   &__nav-item:not(:last-child),
   &__contacts-item--email:not(:last-child) {
     margin-right: 50px;
+
+    @include tablet {
+      & {
+        margin-right: 15px;
+      }
+    }
   }
 }
