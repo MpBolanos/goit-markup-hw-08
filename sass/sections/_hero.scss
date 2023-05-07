@@ -5,13 +5,15 @@
   padding-bottom: 200px;
   background-color: $secondary-background-color;
   background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   position: absolute;
   margin: 0;
 
   @include desktop {
     & {
-      max-width: 100%;
+      width: 100%;
       padding-top: 200px;
       padding-bottom: 200px;
       background-color: $secondary-background-color;
@@ -20,7 +22,7 @@
   }
   @include tablet {
     & {
-      max-width: 100%;
+      width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
       background-color: $hero-backgroud-color;
@@ -30,7 +32,7 @@
 
   @include mobile {
     & {
-      max-width: 100%;
+      width: 100%;
       padding-top: 118px;
       padding-bottom: 118px;
       background-color: $hero-backgroud-color;
